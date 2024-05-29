@@ -1,0 +1,20 @@
+fungsi removeAt(array, index):
+  // Periksa apakah indeks valid
+  jika index < 0 atau index > panjang(array) - 1:
+    kembalikan "Indeks tidak valid"
+
+  // Buat array baru untuk menyimpan elemen yang dimodifikasi
+  array_baru = []
+
+  // Salin elemen hingga indeks ke array_baru
+  untuk i dari 0 sampai index - 1:
+    array_baru.append(array[i])
+
+  // Lewati elemen pada indeks (dihapus)
+  
+  // Copy elemen yang tersisa dari array asli ke array baru
+  untuk i dari index + 1 sampai panjang(array):
+    array_baru.append(array[i])
+
+  // Kembalikan array yang dimodifikasi
+  kembalikan array_baru
